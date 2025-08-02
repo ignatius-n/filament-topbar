@@ -49,15 +49,14 @@ Once installed, the package works automatically. No additional configuration is 
 
 ```php
 $panel
-  ->topbarNavigation();
+  ->topNavigation();
 ```
 
 ### How it works
 
 The package:
-1. Backs up the original Filament topbar component as `filament-panels::topbar-backup`
-2. Registers a new custom topbar component that replaces the default one
-3. Uses a custom Blade view that enhances the topbar functionality
+1. Registers a new custom topbar component that replaces the default one
+2. Uses a custom Blade view that enhances the topbar functionality
 
 ### Customization
 
