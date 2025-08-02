@@ -2,8 +2,8 @@
 
 namespace JeffersonGoncalves\Filament\Topbar;
 
-use Illuminate\Support\Facades\Blade;
-use JeffersonGoncalves\Filament\Topbar\Components\Topbar;
+use JeffersonGoncalves\Filament\Topbar\Livewire\Topbar;
+use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -16,8 +16,15 @@ class TopbarServiceProvider extends PackageServiceProvider
             ->hasViews();
     }
 
+    public function packageRegistered(): void
+    {
+        if (!app()->runningInConsole()) {
+            class_alias(Topbar::class, \Filament\Livewire\Topbar::class);
+        }
+    }
+
     public function packageBooted(): void
     {
-        Blade::component('filament-panels::topbar', Topbar::class);
+        Livewire::component('filament-topbar', Topbar::class);
     }
 }

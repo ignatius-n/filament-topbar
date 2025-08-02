@@ -31,14 +31,14 @@ A simple yet effective Filament plugin that automatically adds a customized topb
 ## Requirements
 
 - PHP 8.2 or higher
-- Filament 3.x
+- Filament 4.x
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require jeffersongoncalves/filament-topbar:^1.0
+composer require jeffersongoncalves/filament-topbar:^2.0
 ```
 
 The package will automatically register its service provider and replace the default Filament topbar component.
