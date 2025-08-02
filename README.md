@@ -14,6 +14,12 @@
 
 A simple yet effective Filament plugin that automatically adds a customized topbar to your Filament admin panel. This plugin enhances your Filament panel's user experience by replacing the default topbar component with an improved version that displays navigation and user interface elements in strategic locations.
 
+## Preview
+
+![Preview Topbar Navigation](https://raw.githubusercontent.com/jeffersongoncalves/filament-topbar/1.x/art/preview-topbar-navigation.png)
+
+![Preview Topbar Navigation Mobile](https://raw.githubusercontent.com/jeffersongoncalves/filament-topbar/1.x/art/preview-topbar-navigation-mobile.png)
+
 ## Features
 
 - 🎨 **Custom Topbar Component**: Replaces the default Filament topbar with an enhanced version

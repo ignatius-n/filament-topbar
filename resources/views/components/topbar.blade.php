@@ -14,7 +14,7 @@
         <div
             class="flex h-16 items-center gap-x-4 bg-white px-4 shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10 md:px-6 lg:px-8"
         >
-            <div class="me-6 hidden lg:flex">
+            <div class="me-6 flex">
                 @if ($homeUrl = filament()->getHomeUrl())
                     <a {{ \Filament\Support\generate_href_html($homeUrl) }}>
                         <x-filament-panels::logo/>
