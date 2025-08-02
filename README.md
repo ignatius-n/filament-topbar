@@ -30,8 +30,7 @@ A simple yet effective Filament plugin that automatically adds a customized topb
 
 ## Requirements
 
-- PHP 8.2 or 8.3
-- Laravel 10.x or 11.x (via Orchestra Testbench compatibility)
+- PHP 8.2 or higher
 - Filament 3.x
 
 ## Installation
@@ -47,6 +46,11 @@ The package will automatically register its service provider and replace the def
 ## Usage
 
 Once installed, the package works automatically. No additional configuration is required. The enhanced topbar will be displayed in all your Filament admin panels.
+
+```php
+$panel
+  ->topbarNavigation();
+```
 
 ### How it works
 
