@@ -20,8 +20,9 @@ class TopbarPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->topNavigation();
-        class_alias(Topbar::class, \Filament\Livewire\Topbar::class);
+        $panel
+            ->topNavigation()
+            ->topbarLivewireComponent(Topbar::class);
     }
 
     public function boot(Panel $panel): void {}
