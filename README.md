@@ -45,11 +45,14 @@ The package will automatically register its service provider and replace the def
 
 ## Usage
 
-Once installed, the package works automatically. No additional configuration is required. The enhanced topbar will be displayed in all your Filament admin panels.
+Add in AdminPanelProvider.php
 
 ```php
-$panel
-  ->topNavigation();
+use JeffersonGoncalves\Filament\Topbar\TopbarPlugin;
+
+->plugins([
+    TopbarPlugin::make(),
+])
 ```
 
 ### How it works
