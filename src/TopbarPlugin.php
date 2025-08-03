@@ -21,6 +21,7 @@ class TopbarPlugin implements Plugin
     public function register(Panel $panel): void
     {
         $panel
+            ->topbar()
             ->topNavigation()
             ->topbarLivewireComponent(Topbar::class);
     }
