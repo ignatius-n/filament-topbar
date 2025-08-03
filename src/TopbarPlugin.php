@@ -24,8 +24,5 @@ class TopbarPlugin implements Plugin
         class_alias(Topbar::class, \Filament\Livewire\Topbar::class);
     }
 
-    public function boot(Panel $panel): void
-    {
-
-    }
+    public function boot(Panel $panel): void {}
 }
